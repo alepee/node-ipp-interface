@@ -1,0 +1,36 @@
+{
+  "name": "node-ipp-interface",
+  "version": "1.0.0",
+  "description": "Provide an OOP interface for 'ipp' module (https://github.com/williamkapke/ipp)",
+  "main": "printer.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/alepee/node-ipp-interface.git"
+  },
+  "keywords": [
+    "ipp",
+    "printer",
+    "print",
+    "cups"
+  ],
+  "author": "Antoine Lépée <alepee@gmail.com>",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/alepee/node-ipp-interface/issues"
+  },
+  "homepage": "https://github.com/alepee/node-ipp-interface#readme",
+  "dependencies": {
+    "ipp": "0.0.8"
+  },
+  "devDependencies": {
+    "jasmine": "^2.3.2"
+  }
+}
