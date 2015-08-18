@@ -44,7 +44,7 @@
     self.printer._api.execute('Send-Document', {
       'operation-attributes-tag': {
         'job-uri': self.uri,
-        'last-document': true
+        'last-document': 'true'
       }
     }, function(err, res) {
       if (err) return console.error(err);
