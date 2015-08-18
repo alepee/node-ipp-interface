@@ -2,7 +2,7 @@
   'use strict';
 
   var ipp = require('ipp');
-  var Job = reuqire('./job');
+  var Job = require('./job');
 
   var events = require('events');
   utils.inherits(Printer, events.EventEmitter);
