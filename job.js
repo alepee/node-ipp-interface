@@ -2,7 +2,7 @@
   'use strict';
 
   var events = require('events');
-  var utils = require('utils');
+  var utils = require('util');
   utils.inherits(Job, events.EventEmitter);
 
   function Job(printer, file) {

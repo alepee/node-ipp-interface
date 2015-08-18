@@ -3,7 +3,7 @@
 
   var ipp = require('ipp');
   var Job = require('./job');
-  var utils = require('utils');
+  var utils = require('util');
 
   var events = require('events');
   utils.inherits(Printer, events.EventEmitter);
