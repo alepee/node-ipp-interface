@@ -4,7 +4,7 @@
   var events = require('events');
   utils.inherits(Job, events.EventEmitter);
 
-  function Job(printer) {
+  function Job(printer, file) {
     this.printer = printer;
 
     var self = this;

@@ -2,7 +2,6 @@
   'use strict';
 
   var ipp = require('ipp');
-  var Promise = require('promise');
   var Job = reuqire('./job');
 
   var events = require('events');
@@ -22,8 +21,12 @@
     });
   }
 
-  Printer.prototype.createJob = function(fileBuffer) {
-    return new Job(self);
+  Printer.prototype.createJob = function(file) {
+    var self = this;
+    if (file && !Buffer.isBuffer(file)) {
+      return console.error('createJob method needs takes no argument or a buffer.');
+    }
+    return new Job(self, file);
   };
 
   Printer.prototype.getJobs = function() {
