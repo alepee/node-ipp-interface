@@ -106,6 +106,7 @@
   };
 
   Job.prototype.refresh = function() {
+    var self = this;
     self.printer._api.execute('Get-Job-Attributes', {
       'operation-attributes-tag': {
         'job-uri': self.uri
